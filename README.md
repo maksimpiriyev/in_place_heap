@@ -20,3 +20,16 @@ prints out as
 ```
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
 ```
+also the below code:
+```c++
+heap<test> h2;
+for(int i=10;i>=0;i--){
+   h2.push(test(i));
+}
+
+while(h2.size()){
+   auto t = h2.top();
+   h2.pop();
+   printf("%d, ",t.d);
+}
+```
