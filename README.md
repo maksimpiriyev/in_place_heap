@@ -22,6 +22,14 @@ prints out as
 ```
 also the below code:
 ```c++
+class test{
+public:
+    int d = 0;
+    test(){}
+    test(int d):d(d){}
+    bool operator < (const test& t){ return d < t.d;}
+};
+
 heap<test> h2;
 for(int i=10;i>=0;i--){
    h2.push(test(i));
