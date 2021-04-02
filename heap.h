@@ -10,7 +10,7 @@
 
 template <typename T,int K = 32>
 class heap{
-    T data[K] = {0};
+    T data[K];
     int length = 0;
     void swap(T& t1,T& t2){
         T t = t1;
@@ -20,7 +20,7 @@ class heap{
     void heapifyUp(int i){
         int p = (i-1)/2;
         if(i == p) return;
-        if(data[p] > data[i]){
+        if(data[i] < data[p]){
             swap(data[p],data[i]);
             heapifyUp(p);
         }
@@ -48,7 +48,7 @@ public:
         if(length == 0)
             return;
         data[0] = data[length-1];
-        data[length-1] = 0;
+//        data[length-1] = 0;
         length--;
         heapifyDown(0);
         
