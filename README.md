@@ -8,12 +8,6 @@ Easy to use code samples below
   for(int i=10;i>=0;i--){
         h.push(i);
     }
-//    for(int i=0;i<10;i++){
-//            h.push(i);
-//        }
-//    h.push(0);
-//    h.push(1);
-//    h.push(2);
     
     while(h.size()){
         int t = h.top();
