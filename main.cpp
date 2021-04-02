@@ -9,6 +9,13 @@
 #include "heap.h"
 
 
+class test{
+public:
+    int d = 0;
+    test(){}
+    test(int d):d(d){}
+    bool operator < (const test& t){ return d < t.d;}
+};
 int main(int argc, const char * argv[]) {
 
     heap<int> h;
@@ -26,7 +33,20 @@ int main(int argc, const char * argv[]) {
     while(h.size()){
         int t = h.top();
         h.pop();
-        printf("%d\n",t);
+        printf("%d, ",t);
+    }
+    
+    printf("\n");
+    
+    heap<test> h2;
+    for(int i=10;i>=0;i--){
+        h2.push(test(i));
+    }
+
+    while(h2.size()){
+        auto t = h2.top();
+        h2.pop();
+        printf("%d, ",t.d);
     }
     return 0;
 }
