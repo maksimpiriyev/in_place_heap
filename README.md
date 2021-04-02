@@ -13,6 +13,10 @@ for(int i=10;i>=0;i--){
 while(h.size()){
    int t = h.top();
    h.pop();
-   printf("%d\n",t);
+   printf("%d, ",t);
 }
+```
+prints out as 
+```
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
 ```
