@@ -23,7 +23,7 @@ prints out as
 ```
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
 ```
-also the below code:
+also the below code with custom class or struct:
 ```c++
 class test{
 public:
