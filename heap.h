@@ -5,12 +5,13 @@
 //  Created by Maksim Piriyev on 02.04.21.
 //
 
-#pragma once
+//#pragma once
+//export module foo;
 
 
-template <typename T,int K = 32>
+template <typename T,int Size = 1024>
 class heap{
-    T data[K];
+    T data[Size];
     int length = 0;
     void swap(T& t1,T& t2){
         T t = t1;
