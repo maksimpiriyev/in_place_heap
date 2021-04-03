@@ -1,7 +1,10 @@
 # in_place_heap
 In place heap (priority queue) for embedded systems such as arduino, stm32,etc. O(logN) complexity, always returns the min element.
 Easy to use code samples below
-
+```c++
+int size = 1024;
+heap<int,size> heap_with_size;
+```
 ```c++
 
 heap<int> h;
